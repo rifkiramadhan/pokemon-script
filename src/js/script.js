@@ -7,7 +7,7 @@ async function fetchPokemonDetail(url) {
 
     const htmlContent = `
       <div class="content-details">
-        <a class="content-back" href="../index.html">&#8249;</a>
+        <a class="content-back" href=".././index.html">&#8249;</a>
         <h1 class="content-details-heading">${pokemonData.name}</h1>
         <img class="content-details-img" src="${
           pokemonData.sprites.front_default
