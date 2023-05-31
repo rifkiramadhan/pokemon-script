@@ -1,8 +1,12 @@
 /* Aside */
 aside {
-  width: 25%;
+  width: 20%;
   float: right;
-  padding-left: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #383430;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 aside section article figure img {
   width: 100%;
@@ -28,7 +32,6 @@ aside section article figure figcaption {
 @media screen and (max-width: 1000px) {
   aside {
     width: 100%;
-    padding: 0px;
     object-fit: contain;
     object-position: center;
   }

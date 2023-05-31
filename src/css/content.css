@@ -9,9 +9,11 @@ main div section article div.content-details .content-back {
   border-radius: 8px;
   color: white;
   text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 main div section article div.content-details .content-back:hover {
   color: yellowgreen;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 main div section article div h1.content-details-heading {
   font-size: 28px;
@@ -23,7 +25,8 @@ main div section article div img.content-details-img {
   object-fit: contain;
   object-position: center;
   border-radius: 8px 8px 0px 0px;
-  margin-top: 10px;
+  margin-top: 60px;
+  margin-bottom: 15px;
 }
 main div section article div img.content-details-img {
   transition: transform 0.3s ease;

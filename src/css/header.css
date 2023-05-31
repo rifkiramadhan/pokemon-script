@@ -10,5 +10,6 @@ header {
   margin-bottom: 1rem;
   border-radius: 12px;
   color: whitesmoke;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
