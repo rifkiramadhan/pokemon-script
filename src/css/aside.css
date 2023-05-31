@@ -1,0 +1,35 @@
+/* Aside */
+aside {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+aside section article figure img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px 8px 0px 0px;
+  margin-top: 10px;
+}
+aside section article h1 {
+  font-size: 20px;
+}
+aside section article p {
+  margin-top: 10px;
+}
+aside section article figure figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Responsive ASide */
+@media screen and (max-width: 1000px) {
+  aside {
+    width: 100%;
+    padding: 0px;
+    object-fit: contain;
+    object-position: center;
+  }
+}

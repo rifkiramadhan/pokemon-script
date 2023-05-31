@@ -1,0 +1,66 @@
+/* Content */
+main div section article div.content-details {
+  width: 100%;
+}
+main div section article div.content-details .content-back {
+  padding: 10px;
+  background-color: #333;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+main div section article div.content-details .content-back:hover {
+  color: yellowgreen;
+}
+main div section article div h1.content-details-heading {
+  font-size: 28px;
+  text-align: center;
+}
+main div section article div img.content-details-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px 8px 0px 0px;
+  margin-top: 10px;
+}
+main div section article div img.content-details-img {
+  transition: transform 0.3s ease;
+}
+
+main div section article div img.content-details-img:hover {
+  transform: translateY(-10px);
+}
+main div section article ul {
+  list-style: none;
+}
+main div section article ul li {
+  margin-bottom: 10px;
+  background-color: #383430;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: large;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  justify-content: space-between;
+}
+main div section article ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+main div section article ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Content Animation */
+@keyframes underline {
+  0% {
+    width: 0; /* Mulai dengan lebar 0 */
+  }
+  100% {
+    width: 100%; /* Akhiri dengan lebar 100% */
+  }
+}

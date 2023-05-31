@@ -1,0 +1,6 @@
+/* Main */
+main {
+  padding: 20px;
+  overflow: auto;
+  min-height: 100vh;
+}

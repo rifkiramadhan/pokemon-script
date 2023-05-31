@@ -1,5 +1,3 @@
-// URL: https://pokeapi.co/api/v2/pokemon/
-
 async function fetchPokemonDetail(url) {
   try {
     const response = await axios.get(url);
@@ -7,7 +5,7 @@ async function fetchPokemonDetail(url) {
 
     const htmlContent = `
       <div class="content-details">
-        <a class="content-back" href=".././index.html">&#8249;</a>
+        <a class="content-back" href="./index.html">&#8249;</a>
         <h1 class="content-details-heading">${pokemonData.name}</h1>
         <img class="content-details-img" src="${
           pokemonData.sprites.front_default
@@ -26,7 +24,7 @@ async function fetchPokemonDetail(url) {
                 .map((types) => types.type.name)
                 .join(', ')}</td>
           </tr>
-      </table>
+        </table>
       <div>
       `;
 
@@ -51,7 +49,10 @@ async function fetchData() {
     let htmlContent = '<ul>';
 
     dataResult.map((pokemon) => {
-      htmlContent += `<li><a href="#" onclick="fetchPokemonDetail('${pokemon.url}')">${pokemon.name}</a></li>`;
+      htmlContent += `
+      <li>
+        <a href="#" onclick="fetchPokemonDetail('${pokemon.url}')"><span><img src="./src/assets/img/icon.png" width="15px" /> ${pokemon.name}</span> <span>&#8250;</span></a>
+      </li>`;
     });
 
     htmlContent += '</ul>';
@@ -63,27 +64,3 @@ async function fetchData() {
 }
 
 document.addEventListener('DOMContentLoaded', fetchData);
-
-const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.3
-        }s`;
-      }
-    });
-
-    burger.classList.toggle('toggle');
-  });
-};
-
-navSlide();
