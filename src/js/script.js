@@ -40,8 +40,11 @@ async function fetchPokemonDetail(url) {
   }
 }
 
-async function fetchData() {
+async function searchData() {
   try {
+    const searchValue = document
+      .getElementById('search-input')
+      .value.toLowerCase();
     const response = await axios.get('https://pokeapi.co/api/v2/pokemon');
     const dataResult = response.data.results;
     const resultElement = document.getElementById('result');
@@ -49,10 +52,12 @@ async function fetchData() {
     let htmlContent = '<ul>';
 
     dataResult.map((pokemon) => {
-      htmlContent += `
-      <li>
-        <a href="#" onclick="fetchPokemonDetail('${pokemon.url}')"><span><img src="./src/assets/img/icon.png" width="15px" /> ${pokemon.name}</span> <span>&#8250;</span></a>
-      </li>`;
+      if (pokemon.name.toLowerCase().includes(searchValue)) {
+        htmlContent += `
+        <li>
+          <a href="#" onclick="fetchPokemonDetail('${pokemon.url}')"><span><img src="./src/assets/img/icon.png" width="15px" /> ${pokemon.name}</span> <span>&#8250;</span></a>
+        </li>`;
+      }
     });
 
     htmlContent += '</ul>';
@@ -63,4 +68,8 @@ async function fetchData() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', fetchData);
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('search-input');
+  searchInput.addEventListener('input', searchData);
+  searchData();
+});
