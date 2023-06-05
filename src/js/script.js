@@ -40,10 +40,10 @@ const fetchPokemonDetail = async (url) => {
   }
 };
 
-const fetchData = async () => {
-  const ITEMS_PER_PAGE = 10;
-  let currentPage = 1;
+const ITEMS_PER_PAGE = 10;
+let currentPage = 1;
 
+const fetchData = async () => {
   try {
     const searchValue = document
       .getElementById('search-input')
