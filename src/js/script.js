@@ -65,8 +65,8 @@ const fetchData = async () => {
 
     if (filteredData.length === 0) {
       notFoundElement.style.display = 'block';
-      resultElement.innerHTML = ''; // Mengosongkan hasil pencarian sebelumnya
-      paginationElement.innerHTML = ''; // Menghapus tombol paginasi
+      resultElement.innerHTML = '';
+      paginationElement.innerHTML = '';
     } else {
       const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
       let htmlContent = '<ul>';
