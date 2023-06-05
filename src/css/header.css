@@ -6,9 +6,58 @@ header {
   background-size: cover;
   position: relative;
   margin: 20px;
-  padding: 40px;
-  border-radius: 12px;
+  padding: 40px 20px 40px 20px;
+  border-radius: 8px;
   color: whitesmoke;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
   z-index: -1;
+}
+header .header-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  padding: 20px;
+}
+header .header-text h1 {
+  margin-bottom: 5px;
+}
+header .header-text p {
+  margin-top: 0;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header {
+    margin-top: 1.9rem;
+  }
+}
+
+/* Min Large devices */
+@media (max-width: 480px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../assets/img/pokemon-header.jpeg');
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../assets/img/pokemon-header.jpeg');
+  }
+}
+
+@media (min-width: 992px) {
+  header h1,
+  header p {
+    text-align: left;
+  }
 }

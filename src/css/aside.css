@@ -3,10 +3,11 @@ aside {
   width: 24%;
   float: right;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #fff;
   background-color: #383430;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 }
 aside section article figure img {
   width: 100%;
@@ -14,21 +15,27 @@ aside section article figure img {
   object-fit: contain;
   object-position: center;
   border-radius: 8px 8px 0px 0px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 aside section article h1 {
   font-size: 20px;
 }
 aside section article p {
   margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 aside section article figure figcaption {
-  margin-top: 5px;
+  margin-top: 10px;
   font-style: italic;
   text-align: center;
 }
 
-/* Responsive ASide */
+/* Responsive Aside */
 @media screen and (max-width: 1000px) {
   aside {
     width: 100%;

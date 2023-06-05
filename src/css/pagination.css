@@ -17,4 +17,6 @@ main div.container div.pagination button:hover {
 .active {
   font-weight: bold;
   font-size: large;
+  color: #333;
+  text-decoration: underline;
 }
