@@ -7,8 +7,14 @@ aside {
   color: #fff;
   background-color: #383430;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+aside section.section-1 {
   margin-bottom: 15px;
 }
+aside section.section-2 {
+  margin-top: 5px;
+}
+
 aside section article figure img {
   width: 100%;
   max-height: 300px;
@@ -18,21 +24,23 @@ aside section article figure img {
   margin-top: 5px;
 }
 aside section article h1 {
-  font-size: 20px;
+  font-size: 16px;
 }
 aside section article p {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 aside section article figure figcaption {
   margin-top: 10px;
   font-style: italic;
   text-align: center;
+  font-size: 10px;
 }
 
 /* Responsive Aside */
