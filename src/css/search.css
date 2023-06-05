@@ -1,0 +1,28 @@
+main div.input-container {
+  margin-bottom: 20px;
+}
+main div.input-container input[type='text'] {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+main div.input-container input[type='text']:focus {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+main div.input-container input[type='text']::placeholder {
+  color: #888;
+}
+main div.input-container input[type='text']::-webkit-input-placeholder {
+  color: #888;
+}
+main div.input-container input[type='text']::-moz-placeholder {
+  color: #888;
+}
+main div.input-container input[type='text']:-ms-input-placeholder {
+  color: #888;
+}

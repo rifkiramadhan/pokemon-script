@@ -1,0 +1,8 @@
+main div.not-found-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

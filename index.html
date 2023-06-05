@@ -21,7 +21,10 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/navigation.css" />
-    <link rel="stylesheet" href="./src/css/serach.css" />
+    <link rel="stylesheet" href="./src/css/search.css" />
+    <link rel="stylesheet" href="./src/css/loading.css" />
+    <link rel="stylesheet" href="./src/css/not-found.css" />
+    <link rel="stylesheet" href="./src/css/pagination.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/content.css" />
@@ -45,13 +48,21 @@
 
     <main>
       <div class="input-container">
-        <input type="text" id="search-input" placeholder="Search Pokemon...">
-      </input>
+        <input type="text" id="search-input" placeholder="Cari Pokemon..." />
       </div>
+
+      <div id="loading" class="loading-container">
+        <div class="loader"></div>
+        <div>Tunggu Sebentar...</div>
+      </div>
+
+      <div id="not-found" class="not-found-message">Item tidak ditemukan</div>
+
       <div class="container" id="container">
         <section>
           <article class="result" id="result"></article>
         </section>
+        <div id="pagination" class="pagination"></div>
       </div>
 
       <aside>
